@@ -243,6 +243,37 @@ out(
   ),
 );
 
+// ---------- README images ----------
+// Showcase images for the README (no text inside: GitHub renders SVG
+// without web fonts, so every label lives in the Markdown).
+
+const cutsRow = (mode) => {
+  const sizes = [["l", 200], ["m", 96], ["s", 40]];
+  let x = 0;
+  const parts = sizes.map(([cut, size]) => {
+    const part = `<svg x="${x}" y="${200 - size}" width="${size}" height="${size}" viewBox="${MARK_VIEWBOX}">${markBody(cut, ink[mode], red[mode])}</svg>`;
+    x += size + 64;
+    return part;
+  });
+  return svg(`0 0 ${x - 64} 200`, parts.join(""), "The mark in its three cuts: L, M and S");
+};
+out("docs/images/cuts.svg", cutsRow("light"));
+out("docs/images/cuts-dark.svg", cutsRow("dark"));
+
+const swatches = [
+  palette.paper, palette.ink, palette.akane, palette.slate, palette.night, palette.chalk,
+];
+out(
+  "docs/images/palette.svg",
+  svg(
+    `0 0 ${swatches.length * 120} 120`,
+    swatches
+      .map((c, i) => `<rect x="${i * 120}" y="0" width="120" height="120" fill="${c}"/>`)
+      .join("") + `<rect x="0.5" y="0.5" width="119" height="119" fill="none" stroke="${palette.rule}"/>`,
+    "Palette: paper, ink, akane, slate, night, chalk",
+  ),
+);
+
 // ---------- PNG ----------
 
 const pngs = [
