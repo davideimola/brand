@@ -127,6 +127,7 @@
 /* Paper is always light: print uses the light ground whatever the theme. */
 @media print {
   :root,
+  :root:not([data-theme="light"]),
   [data-theme="dark"],
   .dark {
     --di-bg: #F7F5F0;

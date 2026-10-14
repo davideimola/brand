@@ -99,6 +99,7 @@ ${decl(semantic("dark"), "    ")}
 /* Paper is always light: print uses the light ground whatever the theme. */
 @media print {
   :root,
+  :root:not([data-theme="light"]),
   [data-theme="dark"],
   .dark {
 ${decl(semantic("light"), "    ")}
