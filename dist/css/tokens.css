@@ -7,6 +7,7 @@
   --di-color-graphite: #3B4152;
   --di-color-slate: #5B6070;
   --di-color-rule: #DEDCD5;
+  --di-color-pencil: #94969B;
   --di-color-white: #FFFFFF;
   --di-color-linen: #EDEAE3;
   --di-color-akane: #C91F37;
@@ -15,6 +16,7 @@
   --di-color-night-surface: #1B1E27;
   --di-color-night-inline: #262A35;
   --di-color-night-rule: #2C3040;
+  --di-color-pencil-night: #757475;
   --di-color-chalk: #ECE9E2;
   --di-color-chalk-body: #D6D3CC;
   --di-color-fog: #B4B2AC;
@@ -28,6 +30,7 @@
   --di-fg-muted: #3B4152;
   --di-fg-subtle: #5B6070;
   --di-border: #DEDCD5;
+  --di-rule: #94969B;
   --di-surface: #FFFFFF;
   --di-surface-inline: #EDEAE3;
   --di-accent: #C91F37;
@@ -99,6 +102,7 @@
   --di-fg-muted: #B4B2AC;
   --di-fg-subtle: #8E8C86;
   --di-border: #2C3040;
+  --di-rule: #757475;
   --di-surface: #1B1E27;
   --di-surface-inline: #262A35;
   --di-accent: #E0475C;
@@ -115,6 +119,7 @@
     --di-fg-muted: #B4B2AC;
     --di-fg-subtle: #8E8C86;
     --di-border: #2C3040;
+    --di-rule: #757475;
     --di-surface: #1B1E27;
     --di-surface-inline: #262A35;
     --di-accent: #E0475C;
@@ -136,6 +141,7 @@
     --di-fg-muted: #3B4152;
     --di-fg-subtle: #5B6070;
     --di-border: #DEDCD5;
+    --di-rule: #94969B;
     --di-surface: #FFFFFF;
     --di-surface-inline: #EDEAE3;
     --di-accent: #C91F37;

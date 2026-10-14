@@ -9,6 +9,7 @@
   --color-fg-muted: var(--di-fg-muted);
   --color-fg-subtle: var(--di-fg-subtle);
   --color-border: var(--di-border);
+  --color-rule: var(--di-rule);
   --color-surface: var(--di-surface);
   --color-surface-inline: var(--di-surface-inline);
   --color-accent: var(--di-accent);

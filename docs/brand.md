@@ -55,6 +55,7 @@ Two inks on a light ground, plus a night theme. Exact values in `tokens/tokens.j
 | Secondary (`fg-muted`) | `#3B4152` | `#B4B2AC` |
 | Meta (`fg-subtle`) | `#5B6070` | `#8E8C86` |
 | Hairlines (`border`) | `#DEDCD5` | `#2C3040` |
+| The rule (`rule`) | pencil `#94969B` | `#757475` |
 | Code surface (`surface`) | `#FFFFFF` | `#1B1E27` |
 | Accent (`accent`) | akane `#C91F37` | `#E0475C` |
 
@@ -97,7 +98,7 @@ Label-maker tape for sections ("WRITING", "BUILT BY ME", "TALKS") and content ty
 
 ### 3. The rule
 
-A hairline in ink and plenty of white space. That is the only divider. The git graph lives in the mark; it is not a decoration. The one exception is the slide progress bar (see Slides), where the graph has a job.
+A 1px hairline and plenty of white space. That is the only divider. It comes in two weights: the rule (`rule`, pencil: ink at 45% over the ground) opens a section, heads a table or closes a header; the lighter hairline (`border`) separates the rows inside it. Full ink is too loud for a line that repeats down a page, and the rule must stay darker than the hairline so a section still reads apart from a row. Slides keep the rule in full ink: a projector washes out pencil, and projection needs the contrast. The git graph lives in the mark; it is not a decoration. The one exception is the slide progress bar (see Slides), where the graph has a job.
 
 ## Photography
 
