@@ -1,11 +1,11 @@
 # Brand guidelines
 
-The identity of Davide Imola: builder of AI agents for security, mostly in Go, sharing everything learned along the way. This file is the reference for anyone (person or agent) applying the brand to the site, slides, social cards or anything else. Values live in `tokens/tokens.json`; this file explains how to use them.
+The identity of Davide Imola: builder of AI agents for security who writes mostly Go, sharing everything learned along the way. This file is the reference for anyone (person or agent) applying the brand to the site, slides, social cards or anything else. Values live in `tokens/tokens.json`; this file explains how to use them.
 
 ## Positioning
 
 - **Line:** "I build AI agents for security, and the tools I need along the way. Everything I learn, I share."
-- **Short line:** "Builder. AI agents for security, mostly in Go. Learning in public."
+- **Short line:** "Builder. AI agents for security. Mostly Go. Learning in public."
 - **Motto:** "What you learn, you must share." Sharing is the tone of everything, not a section.
 - Human, not enterprise. Precise, never cold. Never "security expert", never "AI hype", never "manager who stopped coding".
 - Builder framing: "here is what I built and what happened", never "here is what you should do".
