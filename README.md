@@ -29,6 +29,16 @@ A `d` and an `i` drawn as a git graph. The bowl of the `d` is a commit, its stem
 
 It comes in three cuts of the same drawing, so it never gets lost: **L** from 96 px, **M** from 40 px, **S** down to 16 px.
 
+### Why this mark
+
+The `d` and the `i` are my initials, and that is the point. This is not a company or an abstract idea, it is a person, so before anything else the mark had to be my name.
+
+They are drawn as a git graph because branches are where I have lived for more than ten years: writing them, merging them, building the pipelines that ship them. I am moving towards leadership now, and the graph is how I say the developer is still in there.
+
+The knot comes from the mat. Last year I started Hontai Yoshin Ryu, a classical school of jujutsu founded around 1660. I am a yellow belt, so this is not a claim to know anything. It is a reminder of what the first year taught me. Knowing a technique is not the point; understanding why it exists is. The one who wins is not the strongest but the one who adapts, who reads the other person without ever losing their own centre. I thought it was a solo sport, and it turned out to be a team one: you learn from the people who have been there longer than you, and they are the humblest in the room.
+
+A belt gets tied again at every training. That is the knot on the merge: growth that never ends, one session at a time.
+
 ## The name
 
 <picture>
