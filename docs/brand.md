@@ -8,7 +8,55 @@ The identity of Davide Imola: builder of AI agents for security, mostly in Go, s
 - **Short line:** "Builder. AI agents for security, mostly in Go. Learning in public."
 - **Motto:** "What you learn, you must share." Sharing is the tone of everything, not a section.
 - Human, not enterprise. Precise, never cold. Never "security expert", never "AI hype", never "manager who stopped coding".
-- Copy never uses em dashes.
+- Builder framing: "here is what I built and what happened", never "here is what you should do".
+
+## Voice
+
+How the brand sounds, everywhere: blog, LinkedIn, newsletter, talks, the site's own copy. The visual system is two inks and three elements; the voice is the same restraint in words. It is the same in English and in Italian, and it does not change by channel: only the length does.
+
+### Four traits
+
+**A colleague over coffee.** First person, talking to one person who does the same work. Not a speaker addressing a crowd, not a brand addressing customers.
+
+- Yes: "I'm a talker. I do my best thinking out loud."
+- No: "Many developers find that thinking out loud improves clarity."
+
+**Opinions without hedging.** Say what you think, then why. State the limits once, plainly, instead of softening every sentence.
+
+- Yes: "I don't like ORMs in Go."
+- No: "Some developers may prefer to avoid ORMs in certain contexts."
+
+**Specific, or cut it.** Names, tools, numbers, dates, the actual mistake. A sentence that could be about anyone is not about you.
+
+- Yes: "I had the core of Worky working in one weekend. Then a few evenings: three, maybe four days of actual work in total."
+- No: "With AI, building tools has become dramatically faster."
+
+**Honest about what broke.** Under the motto, what went wrong is the most useful thing to share. Tell it plainly, without drama and without spin. Humour is welcome when it is dry and does not try.
+
+- Yes: "Worky is built. It works. I haven't touched it in months, and I don't use it."
+- Yes: "I don't speak Japanese. I removed the kanji."
+- No: "Every failure is a learning opportunity!"
+
+### Shape
+
+- Open on the thing itself: a fact, a scene, a contradiction. Never on what the piece is about to do.
+- Short paragraphs. A key point may stand alone on one line.
+- Connected prose over lists: each sentence leads into the next. Bullets are for genuine enumerations (commands, a handful of features), never for chopping an argument.
+- One call to action per piece.
+- Close clean: the last point, or one question you genuinely want answered. No summary, no formula question ("How do you handle X?").
+
+### Words
+
+- **Never em dashes.** Use a comma, a colon, parentheses or a full stop. An en dash in a range (2022–2026) is typography, not punctuation, and stays.
+- **Never these:** delve, leverage, seamlessly, game-changer, unlock, "it's worth noting", "let's dive in", "in this article we'll explore", "in conclusion", "passionate about", "thought leader", "security expert".
+- **No subjectless passives:** "It is important to understand that…", "Security improves when…". Someone does something.
+- **No signpost triads** ("it has to be fast, local and simple") as a reflex. Three things only when there are exactly three.
+- **Emoji:** at most one, as a wink. Never as bullets or decoration.
+- Plain verbs (build, ship, break, learn, share) and the real name of the tool.
+
+### The test
+
+Read a paragraph back. If any AI could have written it, about any topic, rewrite it.
 
 ## The mark
 
@@ -109,7 +157,7 @@ Portraits are black and white (`grayscale(1)`), cropped tight, never with the ma
 - Navigation: S mark plus bold wordmark, links in `sans`, the current page in ink with a 2px underline.
 - Home: display headline with the marker on "security", lead line, one filled ink button plus one text link, location in mono; portrait on the right aligned to the headline block; three cards with tape: WRITING (latest post, always present), BUILDING (active project, always present), and a rotating slot that shows the next talk if one is scheduled, otherwise the last talk with its recording, otherwise what is being read. A slot never renders empty.
 - Article: h1 in `sans`, lead, mono meta line, hairline, 700px reading column, one marker in the whole piece, quotes set large with a small ink square instead of a side bar, code blocks on `surface` with a 1px `border`.
-- Footer: S mark with the motto, newsletter signup, links in mono.
+- Footer: S mark with name and place, the personal pages and the profiles in mono. No newsletter form: the newsletter is asked for on the pages, where the reader already is.
 
 ## Slides
 
