@@ -1,0 +1,57 @@
+/* A drawing draws itself. Pair with prepareDrawSvg (@davideimola/brand/draw),
+   which tags the shapes. Put the prepared SVG inside an element with the
+   `draw` class, then set data-drawn on that element to draw it all, or on its
+   <g data-step> groups to draw one step at a time. The ink lines run their
+   dash from 0 to 1 together, the ink fills fade in as they finish, and the red
+   detail lands last. Once, never looping. */
+.draw {
+  --di-draw-duration: 1200ms;
+}
+
+.draw [data-draw] {
+  stroke-dasharray: 1 2;
+  stroke-dashoffset: 1.05;
+}
+
+.draw [data-fill] {
+  opacity: 0;
+}
+
+.draw[data-drawn] [data-draw],
+.draw [data-drawn] [data-draw] {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset var(--di-draw-duration) cubic-bezier(0.45, 0, 0.25, 1);
+}
+
+.draw[data-drawn] [data-fill],
+.draw [data-drawn] [data-fill] {
+  opacity: 1;
+  transition: opacity 300ms ease-out calc(var(--di-draw-duration) * 0.75);
+}
+
+.draw[data-drawn] [data-accent],
+.draw [data-drawn] [data-accent] {
+  transition-delay: calc(var(--di-draw-duration) + 50ms);
+  transition-duration: 450ms;
+}
+
+/* Reduced motion: each part appears at once when it is due, with no trace and no delay */
+@media (prefers-reduced-motion: reduce) {
+  .draw [data-draw],
+  .draw [data-fill] {
+    transition: none !important;
+  }
+}
+
+/* Paper never waits for an animation: a drawing prints drawn */
+@media print {
+  .draw [data-draw] {
+    stroke-dashoffset: 0;
+    transition: none;
+  }
+
+  .draw [data-fill] {
+    opacity: 1;
+    transition: none;
+  }
+}

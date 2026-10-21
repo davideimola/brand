@@ -9,10 +9,16 @@
     "./tailwind.css": "./dist/css/tailwind.css",
     "./tokens.json": "./dist/tokens.json",
     "./tokens": "./dist/tokens.mjs",
+    "./draw": {
+      "types": "./dist/draw.d.mts",
+      "default": "./dist/draw.mjs"
+    },
+    "./draw.css": "./dist/css/draw.css",
     "./assets/*": "./assets/*"
   },
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "test": "node --test"
   },
   "packageManager": "pnpm@10.32.1",
   "devDependencies": {

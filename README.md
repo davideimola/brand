@@ -91,9 +91,20 @@ Tailwind v4 (`bg-bg`, `text-fg`, `text-accent`, `bg-tape-bg`, `font-label`, and 
 
 Scripts can read `@davideimola/brand/tokens.json` or import `@davideimola/brand/tokens`.
 
+Drawings in the brand's line style can draw themselves. `prepareDrawSvg` tags the shapes of an SVG string and `draw.css` animates them, in any framework:
+
+```js
+import { prepareDrawSvg } from "@davideimola/brand/draw";
+import "@davideimola/brand/draw.css";
+
+const html = prepareDrawSvg(svg, ["#C91F37", "#E0475C"], "#F7F5F0");
+// Render html inside an element with class="draw", then set data-drawn on it
+// to draw it all, or on its <g data-step> groups to draw one step at a time.
+```
+
 ## Change it
 
-Edit `tokens/tokens.json` or `src/geometry.mjs`, then:
+Edit `tokens/tokens.json`, `src/geometry.mjs` or `src/draw.*`, then:
 
 ```sh
 pnpm install

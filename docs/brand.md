@@ -148,6 +148,15 @@ Label-maker tape for sections ("WRITING", "BUILT BY ME", "TALKS") and content ty
 
 A 1px hairline and plenty of white space. That is the only divider. It comes in two weights: the rule (`rule`, pencil: ink at 45% over the ground) opens a section, heads a table or closes a header; the lighter hairline (`border`) separates the rows inside it. Full ink is too loud for a line that repeats down a page, and the rule must stay darker than the hairline so a section still reads apart from a row. Slides keep the rule in full ink: a projector washes out pencil, and projection needs the contrast. The git graph lives in the mark; it is not a decoration. The one exception is the slide progress bar (see Slides), where the graph has a job.
 
+## Drawings
+
+Illustrations (blog covers, slide diagrams, page drawings) are monoline line art in ink on the paper ground, drawn with the mark's stroke rules: round caps and joins, one stroke weight per drawing, and exactly one red detail. Light ground only: no dark scenes, no glow, no photographs.
+
+- **In motion:** a drawing may draw itself once (about 1.2s): the ink lines trace in together, the ink fills fade in as they finish, and the red detail lands last, like a signature. Never looping.
+- **In steps:** a diagram on a slide may draw one part per click, the red detail on the part that carries the point.
+- Reduced motion shows each part at once when it is due; print and no-JavaScript show it drawn.
+- `prepareDrawSvg` and `draw.css` (`@davideimola/brand/draw`) implement this; each consumer wraps them in its own component.
+
 ## Photography
 
 Portraits are black and white (`grayscale(1)`), cropped tight, never with the mark over them. A tape label may sit on the photo's edge. On hover, the site may reveal colour.
