@@ -40,3 +40,8 @@ test("leaves step groups as they are, so a consumer can reveal them", () => {
   assert.ok(out.includes('<g data-step="2" stroke="#1C2233">'));
   assert.ok(out.includes('<line x2="9" pathLength="1" data-draw=""/>'));
 });
+
+test("fades a label in with the part it names", () => {
+  const out = prep(`<svg><g data-step="1"><text x="0" fill="${INK}">go.mod</text></g></svg>`);
+  assert.ok(out.includes(`<text x="0" fill="${INK}" data-fill="">go.mod</text>`));
+});

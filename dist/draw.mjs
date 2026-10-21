@@ -4,7 +4,7 @@
 //
 // Each drawable element is tagged for draw.css (`.draw`):
 //   data-draw    a stroked shape: gets pathLength="1" so its dash can run 0 to 1
-//   data-fill    a shape filled with ink or red: fades in instead
+//   data-fill    a shape filled with ink or red, or a label: fades in instead
 //   data-accent  red, by its own colour or its group's: comes after the rest
 // The background rect and the paper-coloured fills (they mask what is behind
 // them) are left alone, so they are there from the first frame.
@@ -13,7 +13,7 @@
 // each step in <g data-step="1">, <g data-step="2">... and set data-drawn on the
 // steps that are due. Setting data-drawn on the .draw element draws it all.
 
-const SHAPES = new Set(["path", "circle", "ellipse", "rect", "line", "polyline", "polygon"]);
+const SHAPES = new Set(["path", "circle", "ellipse", "rect", "line", "polyline", "polygon", "text"]);
 
 const attr = (tag, name) => tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1]?.toLowerCase();
 
