@@ -187,8 +187,9 @@ dist/css/tokens.css    CSS custom properties (--di-*), light, dark and print
 dist/css/tailwind.css  Tailwind v4 @theme mapping on top of tokens.css
 dist/tokens.json       resolved, flat values for scripts
 dist/tokens.mjs        the same as an ES module
+DESIGN.md              the brand for coding agents (Google DESIGN.md format), from tokens.json and src/design.md
 assets/svg/            mark (l, m, s), wordmark (regular, bold), lockups, favicon, avatar
 assets/png/            raster exports for places that cannot take SVG
 ```
 
-Edit `tokens/tokens.json` or `src/geometry.mjs`, then run `pnpm build`. Never edit `dist/` or `assets/` by hand.
+Edit `tokens/tokens.json`, `src/geometry.mjs` or `src/design.md`, then run `pnpm build`. Never edit `dist/`, `assets/` or `DESIGN.md` by hand.

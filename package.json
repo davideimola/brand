@@ -14,6 +14,7 @@
       "default": "./dist/draw.mjs"
     },
     "./draw.css": "./dist/css/draw.css",
+    "./DESIGN.md": "./DESIGN.md",
     "./assets/*": "./assets/*"
   },
   "scripts": {

@@ -91,6 +91,8 @@ Tailwind v4 (`bg-bg`, `text-fg`, `text-accent`, `bg-tape-bg`, `font-label`, and 
 
 Scripts can read `@davideimola/brand/tokens.json` or import `@davideimola/brand/tokens`.
 
+Coding agents can read [`DESIGN.md`](DESIGN.md), the brand in Google's [DESIGN.md](https://github.com/google-labs-code/design.md) format: the role tokens as YAML, then the rules in prose. Point your `CLAUDE.md` or `AGENTS.md` at `node_modules/@davideimola/brand/DESIGN.md`.
+
 Drawings in the brand's line style can draw themselves. `prepareDrawSvg` tags the shapes of an SVG string and `draw.css` animates them, in any framework:
 
 ```js
@@ -104,14 +106,14 @@ const html = prepareDrawSvg(svg, ["#C91F37", "#E0475C"], "#F7F5F0");
 
 ## Change it
 
-Edit `tokens/tokens.json`, `src/geometry.mjs` or `src/draw.*`, then:
+Edit `tokens/tokens.json`, `src/geometry.mjs`, `src/draw.*` or `src/design.md`, then:
 
 ```sh
 pnpm install
 pnpm build
 ```
 
-`dist/`, `assets/` and `docs/images/` are generated and committed, so consumers never build anything. Never edit them by hand.
+`dist/`, `assets/`, `docs/images/` and `DESIGN.md` are generated and committed, so consumers never build anything. Never edit them by hand.
 
 ## License
 
